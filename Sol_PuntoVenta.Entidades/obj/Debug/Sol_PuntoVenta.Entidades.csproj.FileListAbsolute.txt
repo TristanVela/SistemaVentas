@@ -1,0 +1,6 @@
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\bin\Debug\Sol_PuntoVenta.Entidades.dll
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\bin\Debug\Sol_PuntoVenta.Entidades.pdb
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.csproj.AssemblyReference.cache
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.csproj.CoreCompileInputs.cache
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.dll
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.pdb
