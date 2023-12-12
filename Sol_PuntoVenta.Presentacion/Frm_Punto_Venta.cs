@@ -39,7 +39,7 @@ namespace Sol_PuntoVenta.Presentacion
             {
                 Dgv_Listado.DataSource = N_Punto_Venta.Litado_pv(cTexto);
                 this.Formato_pv();
-                lbl_totalregistros.Text= "Total registros"+Convert.ToString(Dgv_Listado.Rows.Count);
+                lbl_totalregistros.Text= "Total registros: "+Convert.ToString(Dgv_Listado.Rows.Count);
             }
             catch (Exception ex)
             {
@@ -74,22 +74,37 @@ namespace Sol_PuntoVenta.Presentacion
             Btn_guardar.Visible = Lestado;
             Btn_retornar.Visible = !Lestado;
         }
+
+        private void Selecciona_Item()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_Listado.CurrentRow.Cells["codigo_pv"].Value)))
+            {
+                MessageBox.Show("Por favor selecciona un registro",
+                    "Aviso del sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                this.nCodigo = Convert.ToInt32((Dgv_Listado.CurrentRow.Cells["codigo_pv"].Value));
+                txtDescripcion.Text = Convert.ToString((Dgv_Listado.CurrentRow.Cells["descripcion_pv"].Value));
+            }
+        }
         #endregion
 
-
+    
         private void Frm_Punto_Venta_Load(object sender, EventArgs e)
         {
             this.Listado_pv("%");
         }
 
-
         private void Btn_retornar_Click(object sender, EventArgs e)
         {
-
+            Tbc_principal.SelectedIndex = 0;
         }
-
         private void Btn_nuevo_Click(object sender, EventArgs e)
         {
+            this.Estadoguarda = 1;
             this.Estado_BotonesPrincipales(false);
             this.Estado_BotonesProcesos(true);
             this.LimpiarTexto();
@@ -105,6 +120,130 @@ namespace Sol_PuntoVenta.Presentacion
             this.Estado_BotonesPrincipales(true);
             this.Estado_BotonesProcesos(false);
             Tbc_principal.SelectedIndex = 0;
+        }
+
+
+
+        private void Btn_guardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtDescripcion.Text == String.Empty)
+                {
+                    MessageBox.Show("Falta ingresar datos requeridos (*)",
+                        "Aviso del sistema",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Exclamation);
+                }
+                else {
+                    string rpta = "";
+                    E_Punto_Venta oPropiedad = new E_Punto_Venta();
+                    oPropiedad.Codigo_pv = this.nCodigo;
+                    oPropiedad.Descripcion_pv = txtDescripcion.Text.Trim();
+                    rpta = N_Punto_Venta.Guardar_pv(this.Estadoguarda, oPropiedad);
+                   if (rpta.Equals("OK"))
+                    {
+                        MessageBox.Show("Los datos han sido guardados correctamente",
+                            "Aviso del sistema",
+                            MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                        this.LimpiarTexto();
+                        this.Estado_Texto(false);
+                        this.Estado_BotonesPrincipales(true);
+                        this.Estado_BotonesProcesos(false);
+                        this.Estadoguarda = 0;
+                        this.Listado_pv("%");
+                        Tbc_principal.SelectedIndex = 0;
+                    }
+                    else
+                    {
+                        MessageBox.Show(rpta, "Aviso del sistema",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Btn_actualizar_Click(object sender, EventArgs e)
+        {
+            if (Dgv_Listado.Rows.Count > 0) 
+            {
+                this.Estadoguarda = 2;
+                this.Estado_BotonesPrincipales(false);
+                this.Estado_BotonesProcesos(true);
+                this.Estado_Texto(true);
+                this.LimpiarTexto();
+                this.Selecciona_Item();
+                Tbc_principal.SelectedIndex = 1;
+                txtDescripcion.Focus();
+            }
+        }
+
+
+        private void Dgv_Listado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (this.Estadoguarda == 0)
+            {
+                this.Selecciona_Item();
+                this.Estado_BotonesProcesos(false);
+                Tbc_principal.SelectedIndex = 1;
+            }
+        }
+
+        private void Btn_eliminar_Click(object sender, EventArgs e)
+        {
+            if (Dgv_Listado.Rows.Count > 0)
+            {
+                DialogResult option;
+                option = MessageBox.Show("¿Estas seguro de eliminar el registro seleccionado?",
+                    "Aviso del sistema",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+                if (option == DialogResult.Yes)
+                {
+                    string rpta = "";
+                    this.Selecciona_Item();
+                    rpta = N_Punto_Venta.Eliminar_pv(this.nCodigo);
+                    if (rpta.Equals("OK"))
+                    {
+                        this.Listado_pv("%");
+                        MessageBox.Show("El registro a sido eliminado correctamente",
+                            "Aviso del sistema",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show(rpta,
+                            "Aviso del sistema",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Exclamation);
+                    }
+                    this.LimpiarTexto();
+                }
+            }
+        }
+
+        private void Btn_buscar_Click(object sender, EventArgs e)
+        {
+            this.Listado_pv(txtBuscar.Text.Trim());
+        }
+
+        private void Btn_reporte_Click(object sender, EventArgs e)
+        {
+            if (Dgv_Listado.Rows.Count>0)
+            {
+                Reportes.Frm_Rpta_Punto_Venta oRpt_pv = new Reportes.Frm_Rpta_Punto_Venta();
+                oRpt_pv.txt_p1.Text = txtBuscar.Text.Trim();
+                oRpt_pv.ShowDialog(); 
+            }
         }
     }
 }

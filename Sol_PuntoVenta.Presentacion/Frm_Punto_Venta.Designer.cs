@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Punto_Venta));
             this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lbl_totalregistros = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.Btn_buscar = new System.Windows.Forms.Button();
             this.Dgv_Listado = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -73,7 +74,7 @@
             // 
             this.tabPage1.Controls.Add(this.lbl_totalregistros);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Controls.Add(this.Btn_buscar);
             this.tabPage1.Controls.Add(this.Dgv_Listado);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -87,9 +88,10 @@
             // lbl_totalregistros
             // 
             this.lbl_totalregistros.AutoSize = true;
+            this.lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_totalregistros.Location = new System.Drawing.Point(481, 303);
             this.lbl_totalregistros.Name = "lbl_totalregistros";
-            this.lbl_totalregistros.Size = new System.Drawing.Size(85, 13);
+            this.lbl_totalregistros.Size = new System.Drawing.Size(103, 13);
             this.lbl_totalregistros.TabIndex = 5;
             this.lbl_totalregistros.Text = "Total registros: 0";
             this.lbl_totalregistros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -103,12 +105,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Buscar";
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtBuscar.Location = new System.Drawing.Point(65, 28);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(220, 20);
+            this.txtBuscar.TabIndex = 3;
             // 
             // Btn_buscar
             // 
@@ -118,13 +120,18 @@
             this.Btn_buscar.TabIndex = 2;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
             // Dgv_Listado
             // 
             this.Dgv_Listado.AllowUserToAddRows = false;
             this.Dgv_Listado.AllowUserToDeleteRows = false;
             this.Dgv_Listado.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Dgv_Listado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Dgv_Listado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.Dgv_Listado.ColumnHeadersHeight = 35;
             this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Dgv_Listado.Location = new System.Drawing.Point(6, 72);
@@ -133,6 +140,7 @@
             this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Dgv_Listado.Size = new System.Drawing.Size(486, 190);
             this.Dgv_Listado.TabIndex = 0;
+            this.Dgv_Listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Listado_CellDoubleClick);
             // 
             // tabPage2
             // 
@@ -157,6 +165,7 @@
             this.Btn_guardar.TabIndex = 5;
             this.Btn_guardar.Text = "Guardar";
             this.Btn_guardar.UseVisualStyleBackColor = true;
+            this.Btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
             // Btn_cancelar
             // 
@@ -176,6 +185,7 @@
             this.Btn_retornar.TabIndex = 3;
             this.Btn_retornar.Text = "Retornar";
             this.Btn_retornar.UseVisualStyleBackColor = true;
+            this.Btn_retornar.Click += new System.EventHandler(this.Btn_retornar_Click);
             // 
             // txtDescripcion
             // 
@@ -236,6 +246,7 @@
             this.Btn_actualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_actualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_actualizar.UseVisualStyleBackColor = false;
+            this.Btn_actualizar.Click += new System.EventHandler(this.Btn_actualizar_Click);
             // 
             // Btn_reporte
             // 
@@ -252,6 +263,7 @@
             this.Btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_reporte.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_reporte.UseVisualStyleBackColor = false;
+            this.Btn_reporte.Click += new System.EventHandler(this.Btn_reporte_Click);
             // 
             // Btn_eliminar
             // 
@@ -268,6 +280,7 @@
             this.Btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_eliminar.UseVisualStyleBackColor = false;
+            this.Btn_eliminar.Click += new System.EventHandler(this.Btn_eliminar_Click);
             // 
             // Btn_salir
             // 
@@ -339,7 +352,7 @@
         private System.Windows.Forms.TabControl Tbc_principal;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button Btn_buscar;
         private System.Windows.Forms.DataGridView Dgv_Listado;
         private System.Windows.Forms.Button Btn_guardar;
