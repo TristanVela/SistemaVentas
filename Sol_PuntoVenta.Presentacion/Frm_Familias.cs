@@ -12,10 +12,9 @@ using Sol_PuntoVenta.Entidades;
 
 namespace Sol_PuntoVenta.Presentacion
 {
-    public partial class Frm_Punto_Venta: Form
+    public partial class Frm_Familias : Form
     {
-      
-        public Frm_Punto_Venta()
+        public Frm_Familias()
         {
             InitializeComponent();
         }
@@ -26,20 +25,20 @@ namespace Sol_PuntoVenta.Presentacion
         #endregion
 
         #region "Mis metodos"
-        private void Formato_pv()
+        private void Formato_fa()
         {
             Dgv_Listado.Columns[0].Width = 100;
-            Dgv_Listado.Columns[0].HeaderText="CODIGO_PV";
+            Dgv_Listado.Columns[0].HeaderText="CODIGO_FA";
             Dgv_Listado.Columns[1].Width = 350;
-            Dgv_Listado.Columns[1].HeaderText="PUNTO DE VENTA";
+            Dgv_Listado.Columns[1].HeaderText="FAMILIAS";
         }
 
-        private void Listado_pv(string cTexto)
+        private void Listado_fa(string cTexto)
         {
             try
             {
-                Dgv_Listado.DataSource = N_Punto_Venta.Litado_pv(cTexto);
-                this.Formato_pv();
+                Dgv_Listado.DataSource = N_Familias.Litado_fa(cTexto);
+                this.Formato_fa();
                 lbl_totalregistros.Text= "Total registros: "+Convert.ToString(Dgv_Listado.Rows.Count);
             }
             catch (Exception ex)
@@ -78,7 +77,7 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Selecciona_Item()
         {
-            if (string.IsNullOrEmpty(Convert.ToString(Dgv_Listado.CurrentRow.Cells["codigo_pv"].Value)))
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_Listado.CurrentRow.Cells["codigo_fa"].Value)))
             {
                 MessageBox.Show("Por favor selecciona un registro",
                     "Aviso del sistema",
@@ -87,16 +86,16 @@ namespace Sol_PuntoVenta.Presentacion
             }
             else
             {
-                this.nCodigo = Convert.ToInt32((Dgv_Listado.CurrentRow.Cells["codigo_pv"].Value));
-                txtDescripcion.Text = Convert.ToString((Dgv_Listado.CurrentRow.Cells["descripcion_pv"].Value));
+                this.nCodigo = Convert.ToInt32((Dgv_Listado.CurrentRow.Cells["codigo_fa"].Value));
+                txtDescripcion.Text = Convert.ToString((Dgv_Listado.CurrentRow.Cells["descripcion_fa"].Value));
             }
         }
         #endregion
 
     
-        private void Frm_Punto_Venta_Load(object sender, EventArgs e)
+        private void Frm_Familias_Load(object sender, EventArgs e)
         {
-            this.Listado_pv("%");
+            this.Listado_fa("%");
         }
 
         private void Btn_retornar_Click(object sender, EventArgs e)
@@ -138,10 +137,10 @@ namespace Sol_PuntoVenta.Presentacion
                 }
                 else {
                     string rpta = "";
-                    E_Punto_Venta oPropiedad = new E_Punto_Venta();
-                    oPropiedad.Codigo_pv = this.nCodigo;
-                    oPropiedad.Descripcion_pv = txtDescripcion.Text.Trim();
-                    rpta = N_Punto_Venta.Guardar_pv(this.Estadoguarda, oPropiedad);
+                    E_Familias oPropiedad = new E_Familias();
+                    oPropiedad.Codigo_fa = this.nCodigo;
+                    oPropiedad.Descripcion_fa = txtDescripcion.Text.Trim();
+                    rpta = N_Familias.Guardar_fa(this.Estadoguarda, oPropiedad);
                    if (rpta.Equals("OK"))
                     {
                         MessageBox.Show("Los datos han sido guardados correctamente",
@@ -154,7 +153,7 @@ namespace Sol_PuntoVenta.Presentacion
                         this.Estado_BotonesPrincipales(true);
                         this.Estado_BotonesProcesos(false);
                         this.Estadoguarda = 0;
-                        this.Listado_pv("%");
+                        this.Listado_fa("%");
                         Tbc_principal.SelectedIndex = 0;
                     }
                     else
@@ -211,10 +210,10 @@ namespace Sol_PuntoVenta.Presentacion
                 {
                     string rpta = "";
                     this.Selecciona_Item();
-                    rpta = N_Punto_Venta.Eliminar_pv(this.nCodigo);
+                    rpta = N_Familias.Eliminar_fa(this.nCodigo);
                     if (rpta.Equals("OK"))
                     {
-                        this.Listado_pv("%");
+                        this.Listado_fa("%");
                         MessageBox.Show("El registro a sido eliminado correctamente",
                             "Aviso del sistema",
                             MessageBoxButtons.OK,
@@ -234,17 +233,18 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Btn_buscar_Click(object sender, EventArgs e)
         {
-            this.Listado_pv(txtBuscar.Text.Trim());
+            this.Listado_fa(txtBuscar.Text.Trim());
         }
 
         private void Btn_reporte_Click(object sender, EventArgs e)
         {
             if (Dgv_Listado.Rows.Count>0)
             {
-                Reportes.Frm_Rpta_Punto_Venta oRpt_pv = new Reportes.Frm_Rpta_Punto_Venta();
-                oRpt_pv.txt_p1.Text = txtBuscar.Text.Trim();
-                oRpt_pv.ShowDialog(); 
+                // Reportes.Frm_Rpta_Punto_Venta oRpt_pv = new Reportes.Frm_Rpta_Punto_Venta();
+                //oRpt_pv.txt_p1.Text = txtBuscar.Text.Trim();
+                //oRpt_pv.ShowDialog(); 
             }
         }
+
     }
 }

@@ -7,3 +7,12 @@ C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.c
 C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CopyComplete
 C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.dll
 C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.pdb
+D:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Datos.dll
+D:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Datos.pdb
+D:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Entidades.dll
+D:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Entidades.pdb
+D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.AssemblyReference.cache
+D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CoreCompileInputs.cache
+D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CopyComplete
+D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.dll
+D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.pdb
