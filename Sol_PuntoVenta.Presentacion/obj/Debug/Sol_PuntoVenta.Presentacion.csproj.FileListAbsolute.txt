@@ -140,3 +140,10 @@ D:\Sistema\Sol_PuntoVenta.Presentacion\bin\Debug\zh-CHT\Microsoft.ReportViewer.W
 D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.csproj.CopyComplete
 D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.exe
 D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.pdb
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Familias.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Familia.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Marcas.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Marcas.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Unidades_Medidas.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Unidad_Medida.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_SubFamilias.resources

@@ -246,5 +246,10 @@ namespace Sol_PuntoVenta.Presentacion
                 oRpt_pv.ShowDialog(); 
             }
         }
+
+        private void Btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -240,11 +240,15 @@ namespace Sol_PuntoVenta.Presentacion
         {
             if (Dgv_Listado.Rows.Count>0)
             {
-                // Reportes.Frm_Rpta_Punto_Venta oRpt_pv = new Reportes.Frm_Rpta_Punto_Venta();
-                //oRpt_pv.txt_p1.Text = txtBuscar.Text.Trim();
-                //oRpt_pv.ShowDialog(); 
+               // Reportes.Frm_Rpt_Familia oRpt_fa = new Reportes.Frm_Rpt_Familia();
+               // oRpt_fa.txt_p1.Text = txtBuscar.Text.Trim();
+               // oRpt_fa.ShowDialog(); 
             }
         }
 
+        private void Btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

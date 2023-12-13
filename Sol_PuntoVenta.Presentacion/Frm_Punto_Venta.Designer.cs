@@ -297,6 +297,7 @@
             this.Btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_salir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_salir.UseVisualStyleBackColor = false;
+            this.Btn_salir.Click += new System.EventHandler(this.Btn_salir_Click);
             // 
             // Pnl_Titulo_Form
             // 

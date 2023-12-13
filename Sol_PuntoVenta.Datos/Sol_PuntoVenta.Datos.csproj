@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="D_Familia.cs" />
+    <Compile Include="D_Marcas.cs" />
     <Compile Include="D_Punto_Venta.cs" />
+    <Compile Include="D_SubFamilias.cs" />
+    <Compile Include="D_Unidades_Medida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
