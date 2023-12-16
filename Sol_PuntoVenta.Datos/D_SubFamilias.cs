@@ -49,7 +49,7 @@ namespace Sol_PuntoVenta.Datos
                 comando.Parameters.Add("@nOpcion", SqlDbType.Int).Value = nOpcion;
                 comando.Parameters.Add("@nCodigo", SqlDbType.Int).Value = oPropiedad.Codigo_sf;
                 comando.Parameters.Add("@cDescripcion", SqlDbType.VarChar).Value = oPropiedad.Descripcion_sf;
-                comando.Parameters.Add("@nCodigo", SqlDbType.Int).Value =oPropiedad.Codigo_fa;
+                comando.Parameters.Add("@nCodigo_fa", SqlDbType.Int).Value =oPropiedad.Codigo_fa;
                 SqlCon.Open();
                 Rpta = comando.ExecuteNonQuery() >= 1 ? "OK" : "No se pudo ingresar el registro";
             }

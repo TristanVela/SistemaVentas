@@ -30,18 +30,18 @@ namespace Sol_PuntoVenta.Presentacion
         {
             Dgv_Listado.Columns[0].Width = 100;
             Dgv_Listado.Columns[0].HeaderText="CODIGO_SF";
-            Dgv_Listado.Columns[1].Width = 350;
+            Dgv_Listado.Columns[1].Width = 250;
             Dgv_Listado.Columns[1].HeaderText="SUBFAMILIAS";
-            Dgv_Listado.Columns[2].Width = 350;
-            Dgv_Listado.Columns[2].HeaderText = "SUBFAMILIAS";
+            Dgv_Listado.Columns[2].Width = 250;
+            Dgv_Listado.Columns[2].HeaderText = "FAMILIAS";
             Dgv_Listado.Columns[3].Visible = false;
         }
 
         private void Formato_fa()
         {
-            Dgv_Listado.Columns[0].Visible = false;
-            Dgv_Listado.Columns[1].Width = 350;
-            Dgv_Listado.Columns[1].HeaderText = "FAMILIAS";
+            dgv_1.Columns[0].Visible = false;
+            dgv_1.Columns[1].Width = 350;
+            dgv_1.Columns[1].HeaderText = "FAMILIAS";
      
         }
 
@@ -100,6 +100,7 @@ namespace Sol_PuntoVenta.Presentacion
             Btn_cancelar.Visible = Lestado;
             Btn_guardar.Visible = Lestado;
             Btn_retornar.Visible = !Lestado;
+            btn_lupa1.Visible = Lestado;
         }
 
         private void Selecciona_Item()
@@ -113,10 +114,10 @@ namespace Sol_PuntoVenta.Presentacion
             }
             else
             {
-                this.nCodigo = Convert.ToInt32((Dgv_Listado.CurrentRow.Cells["codigo_sf"].Value));
-                txtDescripcion.Text = Convert.ToString((Dgv_Listado.CurrentRow.Cells["descripcion_sf"].Value));
-                txtFamilia.Text = Convert.ToString((Dgv_Listado.CurrentRow.Cells["descripcion_fa"].Value));
-                this.nCodigo_fa = Convert.ToInt32((Dgv_Listado.CurrentRow.Cells["codigo_fa"].Value));
+                nCodigo = Convert.ToInt32(Dgv_Listado.CurrentRow.Cells["codigo_sf"].Value);
+                txtDescripcion.Text = Convert.ToString(Dgv_Listado.CurrentRow.Cells["descripcion_sf"].Value);
+                txtFamilia.Text = Convert.ToString(Dgv_Listado.CurrentRow.Cells["descripcion_fa"].Value);
+                this.nCodigo_fa = Convert.ToInt32(Dgv_Listado.CurrentRow.Cells["codigo_fa"].Value);
             }
         }
 
@@ -131,8 +132,8 @@ namespace Sol_PuntoVenta.Presentacion
             }
             else
             {
-                txtFamilia.Text = Convert.ToString((Dgv_Listado.CurrentRow.Cells["descripcion_fa"].Value));
-                this.nCodigo_fa = Convert.ToInt32((Dgv_Listado.CurrentRow.Cells["codigo_fa"].Value));
+                txtFamilia.Text = Convert.ToString((dgv_1.CurrentRow.Cells["descripcion_fa"].Value));
+                this.nCodigo_fa = Convert.ToInt32((dgv_1.CurrentRow.Cells["codigo_fa"].Value));
             }
         }
         #endregion
@@ -201,9 +202,9 @@ namespace Sol_PuntoVenta.Presentacion
                         this.Estado_BotonesPrincipales(true);
                         this.Estado_BotonesProcesos(false);
                         this.Estadoguarda = 0;
-                        this.nCodigo = 0;
-                        this.nCodigo_fa = 0;     
-                        this.Listado_fa("%");
+                      //this.nCodigo = 0;
+                        this.nCodigo_fa = 0;
+                        this.Listado_sf("%");
                         Tbc_principal.SelectedIndex = 0;
                     }
                     else
@@ -291,9 +292,9 @@ namespace Sol_PuntoVenta.Presentacion
         {
             if (Dgv_Listado.Rows.Count>0)
             {
-               // Reportes.Frm_Rpt_Familia oRpt_fa = new Reportes.Frm_Rpt_Familia();
-               // oRpt_fa.txt_p1.Text = txtBuscar.Text.Trim();
-               // oRpt_fa.ShowDialog(); 
+             //  Reportes.Frm_Rpt_SubFamilias oRpt_sf = new Reportes.Frm_Rpt_SubFamilias();
+             //  oRpt_sf.txt_p1.Text = txtBuscar.Text.Trim();
+              // oRpt_sf.ShowDialog(); 
             }
         }
 
@@ -302,10 +303,29 @@ namespace Sol_PuntoVenta.Presentacion
             this.Close();
         }
 
-        private void dgv_1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void btn_retornar1_Click(object sender, EventArgs e)
+        {
+            pnl_listado1.Visible=false;
+        }
+
+        private void btn_buscar1_Click(object sender, EventArgs e)
+        {
+            this.Listado_fa(txtBuscar.Text.Trim());
+        }
+
+        private void btn_lupa1_Click(object sender, EventArgs e)
+        {
+            pnl_listado1.Location = btn_lupa1.Location;
+            pnl_listado1.Visible = true;
+            txtBuscar.Focus();
+        }
+
+        private void dgv_1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             this.Selecciona_Item_fa();
-            pnl_listado1.Visible=false;
+            pnl_listado1.Visible = false;
+            txtDescripcion.Focus();
         }
     }
 }
