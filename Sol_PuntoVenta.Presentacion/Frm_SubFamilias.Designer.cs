@@ -43,6 +43,7 @@
             this.btn_lupa1 = new System.Windows.Forms.Button();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.pnl_listado1 = new System.Windows.Forms.Panel();
+            this.btn_retornar1 = new System.Windows.Forms.Button();
             this.dgv_1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBuscar1 = new System.Windows.Forms.TextBox();
@@ -63,7 +64,6 @@
             this.Btn_salir = new System.Windows.Forms.Button();
             this.Pnl_Titulo_Form = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_retornar1 = new System.Windows.Forms.Button();
             this.Tbc_principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).BeginInit();
@@ -185,6 +185,7 @@
             this.btn_lupa1.TabIndex = 2;
             this.btn_lupa1.UseVisualStyleBackColor = true;
             this.btn_lupa1.Visible = false;
+            this.btn_lupa1.Click += new System.EventHandler(this.btn_lupa1_Click);
             // 
             // imageList2
             // 
@@ -200,11 +201,21 @@
             this.pnl_listado1.Controls.Add(this.txtBuscar1);
             this.pnl_listado1.Controls.Add(this.btn_buscar1);
             this.pnl_listado1.Controls.Add(this.label5);
-            this.pnl_listado1.Location = new System.Drawing.Point(423, 75);
+            this.pnl_listado1.Location = new System.Drawing.Point(245, 130);
             this.pnl_listado1.Name = "pnl_listado1";
-            this.pnl_listado1.Size = new System.Drawing.Size(324, 211);
+            this.pnl_listado1.Size = new System.Drawing.Size(499, 291);
             this.pnl_listado1.TabIndex = 9;
             this.pnl_listado1.Visible = false;
+            // 
+            // btn_retornar1
+            // 
+            this.btn_retornar1.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.btn_retornar1.Location = new System.Drawing.Point(269, 56);
+            this.btn_retornar1.Name = "btn_retornar1";
+            this.btn_retornar1.Size = new System.Drawing.Size(34, 30);
+            this.btn_retornar1.TabIndex = 11;
+            this.btn_retornar1.UseVisualStyleBackColor = true;
+            this.btn_retornar1.Click += new System.EventHandler(this.btn_retornar1_Click);
             // 
             // dgv_1
             // 
@@ -218,13 +229,13 @@
             this.dgv_1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_1.ColumnHeadersHeight = 35;
             this.dgv_1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_1.Location = new System.Drawing.Point(16, 92);
+            this.dgv_1.Location = new System.Drawing.Point(16, 130);
             this.dgv_1.Name = "dgv_1";
             this.dgv_1.ReadOnly = true;
             this.dgv_1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgv_1.Size = new System.Drawing.Size(289, 106);
+            this.dgv_1.Size = new System.Drawing.Size(341, 139);
             this.dgv_1.TabIndex = 10;
-            this.dgv_1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_1_CellContentClick);
+            this.dgv_1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_1_CellDoubleClick);
             // 
             // label6
             // 
@@ -251,6 +262,7 @@
             this.btn_buscar1.Size = new System.Drawing.Size(34, 30);
             this.btn_buscar1.TabIndex = 8;
             this.btn_buscar1.UseVisualStyleBackColor = true;
+            this.btn_buscar1.Click += new System.EventHandler(this.btn_buscar1_Click);
             // 
             // label5
             // 
@@ -440,16 +452,6 @@
             this.label3.Size = new System.Drawing.Size(139, 34);
             this.label3.TabIndex = 0;
             this.label3.Text = "SUBFAMILIAS";
-            // 
-            // btn_retornar1
-            // 
-            this.btn_retornar1.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
-            this.btn_retornar1.ImageList = this.imageList2;
-            this.btn_retornar1.Location = new System.Drawing.Point(269, 56);
-            this.btn_retornar1.Name = "btn_retornar1";
-            this.btn_retornar1.Size = new System.Drawing.Size(34, 30);
-            this.btn_retornar1.TabIndex = 11;
-            this.btn_retornar1.UseVisualStyleBackColor = true;
             // 
             // Frm_SubFamilias
             // 
