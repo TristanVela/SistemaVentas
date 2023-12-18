@@ -202,7 +202,7 @@ namespace Sol_PuntoVenta.Presentacion
                         this.Estado_BotonesPrincipales(true);
                         this.Estado_BotonesProcesos(false);
                         this.Estadoguarda = 0;
-                      //this.nCodigo = 0;
+                        this.nCodigo = 0;
                         this.nCodigo_fa = 0;
                         this.Listado_sf("%");
                         Tbc_principal.SelectedIndex = 0;
@@ -292,9 +292,9 @@ namespace Sol_PuntoVenta.Presentacion
         {
             if (Dgv_Listado.Rows.Count>0)
             {
-             //  Reportes.Frm_Rpt_SubFamilias oRpt_sf = new Reportes.Frm_Rpt_SubFamilias();
-             //  oRpt_sf.txt_p1.Text = txtBuscar.Text.Trim();
-              // oRpt_sf.ShowDialog(); 
+             Reportes.Frm_Rpt_SubFamilias oRpt_sf = new Reportes.Frm_Rpt_SubFamilias();
+             oRpt_sf.txt_p1.Text = txtBuscar.Text.Trim();
+             oRpt_sf.ShowDialog(); 
             }
         }
 

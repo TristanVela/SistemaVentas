@@ -79,11 +79,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Area_Despacho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Area_Despacho.Designer.cs">
+      <DependentUpon>Frm_Area_Despacho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Mesas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Mesas.Designer.cs">
       <DependentUpon>Frm_Mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Productos.Designer.cs">
+      <DependentUpon>Frm_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_SubFamilias.cs">
       <SubType>Form</SubType>
@@ -131,6 +143,12 @@
     <Compile Include="Reportes\Frm_Rpta_Punto_Venta.Designer.cs">
       <DependentUpon>Frm_Rpta_Punto_Venta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Area_Despacho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Area_Despacho.Designer.cs">
+      <DependentUpon>Frm_Rpt_Area_Despacho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\Frm_Rpt_Familia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +160,12 @@
     </Compile>
     <Compile Include="Reportes\Frm_Rpt_Marcas.Designer.cs">
       <DependentUpon>Frm_Rpt_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Mesas.Designer.cs">
+      <DependentUpon>Frm_Rpt_Mesas.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Frm_Rpt_SubFamilias.cs">
       <SubType>Form</SubType>
@@ -156,8 +180,14 @@
       <DependentUpon>Frm_Rpt_Unidad_Medida.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Frm_Area_Despacho.resx">
+      <DependentUpon>Frm_Area_Despacho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Mesas.resx">
       <DependentUpon>Frm_Mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Productos.resx">
+      <DependentUpon>Frm_Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_SubFamilias.resx">
       <DependentUpon>Frm_SubFamilias.cs</DependentUpon>
@@ -186,11 +216,17 @@
     <EmbeddedResource Include="Reportes\Frm_Rpta_Punto_Venta.resx">
       <DependentUpon>Frm_Rpta_Punto_Venta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Area_Despacho.resx">
+      <DependentUpon>Frm_Rpt_Area_Despacho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Rpt_Familia.resx">
       <DependentUpon>Frm_Rpt_Familia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Rpt_Marcas.resx">
       <DependentUpon>Frm_Rpt_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Mesas.resx">
+      <DependentUpon>Frm_Rpt_Mesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Rpt_SubFamilias.resx">
       <DependentUpon>Frm_Rpt_SubFamilias.cs</DependentUpon>
@@ -198,8 +234,10 @@
     <EmbeddedResource Include="Reportes\Frm_Rpt_Unidad_Medida.resx">
       <DependentUpon>Frm_Rpt_Unidad_Medida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Area_Despacho.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Familias.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Marcas.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Mesas.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Punto_Venta.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_SubFamilias.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Unidades_Medida.rdlc" />
