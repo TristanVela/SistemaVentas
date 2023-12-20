@@ -201,7 +201,7 @@ namespace Sol_PuntoVenta.Datos
             }
         }
 
-        public DataTable Puntos_Ventas_OK()
+        public DataTable Puntos_Ventas_OK(int nOpcion, int nCodigo_pr)
         {
             SqlDataReader resultado;
             DataTable Tabla = new DataTable();
@@ -211,10 +211,40 @@ namespace Sol_PuntoVenta.Datos
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 SqlCommand comando = new SqlCommand("USP_Puntos_Ventas_OK", SqlCon);
                 comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@nOpcion", SqlDbType.Int).Value = nOpcion;  
+                comando.Parameters.Add("nCodigo_pr",SqlDbType.Int).Value = nCodigo_pr;
                 SqlCon.Open();
                 resultado = comando.ExecuteReader();
                 Tabla.Load(resultado);
                 return Tabla;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
+        public byte[] Mostrar_img(int nCodigo_pr )
+        {
+            Byte[] bImagen = new  byte[0];
+            SqlDataReader resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand comando = new SqlCommand("USP_Mostrar_img", SqlCon);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
+                SqlCon.Open();
+                resultado = comando.ExecuteReader();
+                Tabla.Load(resultado);
+                bImagen = (byte[])Tabla.Rows[0][0];
+                return bImagen;
             }
             catch (Exception ex)
             {
