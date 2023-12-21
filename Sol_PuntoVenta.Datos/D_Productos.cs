@@ -255,5 +255,32 @@ namespace Sol_PuntoVenta.Datos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
+
+        public byte[] Mostrar_img_prod_pred()
+        {
+            Byte[] bImagen = new byte[0];
+            SqlDataReader resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand comando = new SqlCommand("Mostrar_img_prod_pred", SqlCon);
+                comando.CommandType = CommandType.StoredProcedure;
+                SqlCon.Open();
+                resultado = comando.ExecuteReader();
+                Tabla.Load(resultado);
+                bImagen = (byte[])Tabla.Rows[0][0];
+                return bImagen;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
     }
 }

@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Productos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Productos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lbl_totalregistros = new System.Windows.Forms.Label();
@@ -44,7 +44,22 @@
             this.Btn_buscar = new System.Windows.Forms.Button();
             this.Dgv_Listado = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pnl_listado2 = new System.Windows.Forms.Panel();
+            this.btn_retornar2 = new System.Windows.Forms.Button();
+            this.dgv_2 = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtBuscar2 = new System.Windows.Forms.TextBox();
+            this.btn_buscar2 = new System.Windows.Forms.Button();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.label13 = new System.Windows.Forms.Label();
+            this.pnl_listado4 = new System.Windows.Forms.Panel();
+            this.btn_retornar4 = new System.Windows.Forms.Button();
+            this.dgv_4 = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtBuscar4 = new System.Windows.Forms.TextBox();
+            this.btn_buscar4 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Btn_ad = new System.Windows.Forms.Button();
             this.btn_um = new System.Windows.Forms.Button();
             this.Btn_sf = new System.Windows.Forms.Button();
             this.Btn_ma = new System.Windows.Forms.Button();
@@ -63,13 +78,6 @@
             this.btn_buscar3 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.dgv_3 = new System.Windows.Forms.DataGridView();
-            this.pnl_listado2 = new System.Windows.Forms.Panel();
-            this.btn_retornar2 = new System.Windows.Forms.Button();
-            this.dgv_2 = new System.Windows.Forms.DataGridView();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtBuscar2 = new System.Windows.Forms.TextBox();
-            this.btn_buscar2 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
             this.dgv_puntos_ventas = new System.Windows.Forms.DataGridView();
             this.txt_observacion = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -98,30 +106,22 @@
             this.Btn_salir = new System.Windows.Forms.Button();
             this.Pnl_Titulo_Form = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Btn_ad = new System.Windows.Forms.Button();
-            this.pnl_listado4 = new System.Windows.Forms.Panel();
-            this.btn_retornar4 = new System.Windows.Forms.Button();
-            this.dgv_4 = new System.Windows.Forms.DataGridView();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtBuscar4 = new System.Windows.Forms.TextBox();
-            this.btn_buscar4 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
             this.Tbc_principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.pnl_listado2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_2)).BeginInit();
+            this.pnl_listado4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).BeginInit();
             this.pnl_listado1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).BeginInit();
             this.pnl_listado3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_3)).BeginInit();
-            this.pnl_listado2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_puntos_ventas)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pct_imagen)).BeginInit();
             this.Pnl_Titulo_Form.SuspendLayout();
-            this.pnl_listado4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).BeginInit();
             this.SuspendLayout();
             // 
             // Tbc_principal
@@ -245,11 +245,183 @@
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pnl_listado2
+            // 
+            this.pnl_listado2.Controls.Add(this.btn_retornar2);
+            this.pnl_listado2.Controls.Add(this.dgv_2);
+            this.pnl_listado2.Controls.Add(this.label12);
+            this.pnl_listado2.Controls.Add(this.txtBuscar2);
+            this.pnl_listado2.Controls.Add(this.btn_buscar2);
+            this.pnl_listado2.Controls.Add(this.label13);
+            this.pnl_listado2.Location = new System.Drawing.Point(57, 254);
+            this.pnl_listado2.Name = "pnl_listado2";
+            this.pnl_listado2.Size = new System.Drawing.Size(369, 276);
+            this.pnl_listado2.TabIndex = 12;
+            this.pnl_listado2.Visible = false;
+            // 
+            // btn_retornar2
+            // 
+            this.btn_retornar2.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.btn_retornar2.Location = new System.Drawing.Point(269, 56);
+            this.btn_retornar2.Name = "btn_retornar2";
+            this.btn_retornar2.Size = new System.Drawing.Size(34, 30);
+            this.btn_retornar2.TabIndex = 11;
+            this.btn_retornar2.UseVisualStyleBackColor = true;
+            this.btn_retornar2.Click += new System.EventHandler(this.btn_retornar2_Click);
+            // 
+            // dgv_2
+            // 
+            this.dgv_2.AllowUserToAddRows = false;
+            this.dgv_2.AllowUserToDeleteRows = false;
+            this.dgv_2.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.dgv_2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgv_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgv_2.ColumnHeadersHeight = 35;
+            this.dgv_2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_2.Location = new System.Drawing.Point(16, 130);
+            this.dgv_2.Name = "dgv_2";
+            this.dgv_2.ReadOnly = true;
+            this.dgv_2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgv_2.Size = new System.Drawing.Size(341, 139);
+            this.dgv_2.TabIndex = 10;
+            this.dgv_2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_2_CellDoubleClick);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(99, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Listado de Medidas";
+            // 
+            // txtBuscar2
+            // 
+            this.txtBuscar2.Location = new System.Drawing.Point(77, 62);
+            this.txtBuscar2.Name = "txtBuscar2";
+            this.txtBuscar2.Size = new System.Drawing.Size(146, 20);
+            this.txtBuscar2.TabIndex = 1;
+            // 
+            // btn_buscar2
+            // 
+            this.btn_buscar2.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.btn_buscar2.ImageList = this.imageList2;
+            this.btn_buscar2.Location = new System.Drawing.Point(229, 56);
+            this.btn_buscar2.Name = "btn_buscar2";
+            this.btn_buscar2.Size = new System.Drawing.Size(34, 30);
+            this.btn_buscar2.TabIndex = 8;
+            this.btn_buscar2.UseVisualStyleBackColor = true;
+            this.btn_buscar2.Click += new System.EventHandler(this.btn_buscar2_Click);
+            // 
             // imageList2
             // 
             this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList2.Images.SetKeyName(0, "searchmagnifierinterfacesymbol1_79893.png");
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 65);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(40, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Buscar";
+            // 
+            // pnl_listado4
+            // 
+            this.pnl_listado4.Controls.Add(this.btn_retornar4);
+            this.pnl_listado4.Controls.Add(this.dgv_4);
+            this.pnl_listado4.Controls.Add(this.label16);
+            this.pnl_listado4.Controls.Add(this.txtBuscar4);
+            this.pnl_listado4.Controls.Add(this.btn_buscar4);
+            this.pnl_listado4.Controls.Add(this.label17);
+            this.pnl_listado4.Location = new System.Drawing.Point(553, 310);
+            this.pnl_listado4.Name = "pnl_listado4";
+            this.pnl_listado4.Size = new System.Drawing.Size(369, 276);
+            this.pnl_listado4.TabIndex = 13;
+            this.pnl_listado4.Visible = false;
+            // 
+            // btn_retornar4
+            // 
+            this.btn_retornar4.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.btn_retornar4.Location = new System.Drawing.Point(269, 56);
+            this.btn_retornar4.Name = "btn_retornar4";
+            this.btn_retornar4.Size = new System.Drawing.Size(34, 30);
+            this.btn_retornar4.TabIndex = 11;
+            this.btn_retornar4.UseVisualStyleBackColor = true;
+            this.btn_retornar4.Click += new System.EventHandler(this.btn_retornar4_Click);
+            // 
+            // dgv_4
+            // 
+            this.dgv_4.AllowUserToAddRows = false;
+            this.dgv_4.AllowUserToDeleteRows = false;
+            this.dgv_4.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgv_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgv_4.ColumnHeadersHeight = 35;
+            this.dgv_4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_4.Location = new System.Drawing.Point(16, 130);
+            this.dgv_4.Name = "dgv_4";
+            this.dgv_4.ReadOnly = true;
+            this.dgv_4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgv_4.Size = new System.Drawing.Size(341, 139);
+            this.dgv_4.TabIndex = 10;
+            this.dgv_4.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_4_CellDoubleClick);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(13, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(153, 13);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "Listado de Areas de Despacho";
+            // 
+            // txtBuscar4
+            // 
+            this.txtBuscar4.Location = new System.Drawing.Point(77, 62);
+            this.txtBuscar4.Name = "txtBuscar4";
+            this.txtBuscar4.Size = new System.Drawing.Size(146, 20);
+            this.txtBuscar4.TabIndex = 1;
+            // 
+            // btn_buscar4
+            // 
+            this.btn_buscar4.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.btn_buscar4.ImageList = this.imageList2;
+            this.btn_buscar4.Location = new System.Drawing.Point(229, 56);
+            this.btn_buscar4.Name = "btn_buscar4";
+            this.btn_buscar4.Size = new System.Drawing.Size(34, 30);
+            this.btn_buscar4.TabIndex = 8;
+            this.btn_buscar4.UseVisualStyleBackColor = true;
+            this.btn_buscar4.Click += new System.EventHandler(this.btn_buscar4_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(13, 65);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(40, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Buscar";
+            // 
+            // Btn_ad
+            // 
+            this.Btn_ad.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.Btn_ad.ImageList = this.imageList2;
+            this.Btn_ad.Location = new System.Drawing.Point(423, 171);
+            this.Btn_ad.Name = "Btn_ad";
+            this.Btn_ad.Size = new System.Drawing.Size(34, 30);
+            this.Btn_ad.TabIndex = 26;
+            this.Btn_ad.UseVisualStyleBackColor = true;
+            this.Btn_ad.Visible = false;
+            this.Btn_ad.Click += new System.EventHandler(this.Btn_ad_Click);
             // 
             // btn_um
             // 
@@ -324,9 +496,9 @@
             this.dgv_1.AllowUserToAddRows = false;
             this.dgv_1.AllowUserToDeleteRows = false;
             this.dgv_1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.dgv_1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            this.dgv_1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_1.ColumnHeadersHeight = 35;
@@ -440,9 +612,9 @@
             this.dgv_3.AllowUserToAddRows = false;
             this.dgv_3.AllowUserToDeleteRows = false;
             this.dgv_3.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.dgv_3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.dgv_3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_3.ColumnHeadersHeight = 35;
@@ -454,86 +626,6 @@
             this.dgv_3.Size = new System.Drawing.Size(485, 139);
             this.dgv_3.TabIndex = 10;
             this.dgv_3.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_3_CellDoubleClick);
-            // 
-            // pnl_listado2
-            // 
-            this.pnl_listado2.Controls.Add(this.btn_retornar2);
-            this.pnl_listado2.Controls.Add(this.dgv_2);
-            this.pnl_listado2.Controls.Add(this.label12);
-            this.pnl_listado2.Controls.Add(this.txtBuscar2);
-            this.pnl_listado2.Controls.Add(this.btn_buscar2);
-            this.pnl_listado2.Controls.Add(this.label13);
-            this.pnl_listado2.Location = new System.Drawing.Point(57, 254);
-            this.pnl_listado2.Name = "pnl_listado2";
-            this.pnl_listado2.Size = new System.Drawing.Size(369, 276);
-            this.pnl_listado2.TabIndex = 12;
-            this.pnl_listado2.Visible = false;
-            // 
-            // btn_retornar2
-            // 
-            this.btn_retornar2.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
-            this.btn_retornar2.Location = new System.Drawing.Point(269, 56);
-            this.btn_retornar2.Name = "btn_retornar2";
-            this.btn_retornar2.Size = new System.Drawing.Size(34, 30);
-            this.btn_retornar2.TabIndex = 11;
-            this.btn_retornar2.UseVisualStyleBackColor = true;
-            this.btn_retornar2.Click += new System.EventHandler(this.btn_retornar2_Click);
-            // 
-            // dgv_2
-            // 
-            this.dgv_2.AllowUserToAddRows = false;
-            this.dgv_2.AllowUserToDeleteRows = false;
-            this.dgv_2.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            this.dgv_2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
-            this.dgv_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgv_2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgv_2.ColumnHeadersHeight = 35;
-            this.dgv_2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_2.Location = new System.Drawing.Point(16, 130);
-            this.dgv_2.Name = "dgv_2";
-            this.dgv_2.ReadOnly = true;
-            this.dgv_2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgv_2.Size = new System.Drawing.Size(341, 139);
-            this.dgv_2.TabIndex = 10;
-            this.dgv_2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_2_CellDoubleClick);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 13);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "Listado de Medidas";
-            // 
-            // txtBuscar2
-            // 
-            this.txtBuscar2.Location = new System.Drawing.Point(77, 62);
-            this.txtBuscar2.Name = "txtBuscar2";
-            this.txtBuscar2.Size = new System.Drawing.Size(146, 20);
-            this.txtBuscar2.TabIndex = 1;
-            // 
-            // btn_buscar2
-            // 
-            this.btn_buscar2.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
-            this.btn_buscar2.ImageList = this.imageList2;
-            this.btn_buscar2.Location = new System.Drawing.Point(229, 56);
-            this.btn_buscar2.Name = "btn_buscar2";
-            this.btn_buscar2.Size = new System.Drawing.Size(34, 30);
-            this.btn_buscar2.TabIndex = 8;
-            this.btn_buscar2.UseVisualStyleBackColor = true;
-            this.btn_buscar2.Click += new System.EventHandler(this.btn_buscar2_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 65);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(40, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Buscar";
             // 
             // dgv_puntos_ventas
             // 
@@ -547,11 +639,10 @@
             this.dgv_puntos_ventas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_puntos_ventas.ColumnHeadersHeight = 35;
             this.dgv_puntos_ventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_puntos_ventas.Location = new System.Drawing.Point(670, 34);
+            this.dgv_puntos_ventas.Location = new System.Drawing.Point(699, 34);
             this.dgv_puntos_ventas.Name = "dgv_puntos_ventas";
-            this.dgv_puntos_ventas.ReadOnly = true;
             this.dgv_puntos_ventas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgv_puntos_ventas.Size = new System.Drawing.Size(229, 204);
+            this.dgv_puntos_ventas.Size = new System.Drawing.Size(308, 204);
             this.dgv_puntos_ventas.TabIndex = 24;
             // 
             // txt_observacion
@@ -717,6 +808,7 @@
             this.btn_agregar_img.Text = "Agregar imagen";
             this.btn_agregar_img.UseVisualStyleBackColor = true;
             this.btn_agregar_img.Visible = false;
+            this.btn_agregar_img.Click += new System.EventHandler(this.btn_agregar_img_Click);
             // 
             // Pct_imagen
             // 
@@ -843,98 +935,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "SUBFAMILIAS";
             // 
-            // Btn_ad
-            // 
-            this.Btn_ad.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
-            this.Btn_ad.ImageList = this.imageList2;
-            this.Btn_ad.Location = new System.Drawing.Point(423, 171);
-            this.Btn_ad.Name = "Btn_ad";
-            this.Btn_ad.Size = new System.Drawing.Size(34, 30);
-            this.Btn_ad.TabIndex = 26;
-            this.Btn_ad.UseVisualStyleBackColor = true;
-            this.Btn_ad.Visible = false;
-            this.Btn_ad.Click += new System.EventHandler(this.Btn_ad_Click);
-            // 
-            // pnl_listado4
-            // 
-            this.pnl_listado4.Controls.Add(this.btn_retornar4);
-            this.pnl_listado4.Controls.Add(this.dgv_4);
-            this.pnl_listado4.Controls.Add(this.label16);
-            this.pnl_listado4.Controls.Add(this.txtBuscar4);
-            this.pnl_listado4.Controls.Add(this.btn_buscar4);
-            this.pnl_listado4.Controls.Add(this.label17);
-            this.pnl_listado4.Location = new System.Drawing.Point(463, 28);
-            this.pnl_listado4.Name = "pnl_listado4";
-            this.pnl_listado4.Size = new System.Drawing.Size(369, 276);
-            this.pnl_listado4.TabIndex = 13;
-            this.pnl_listado4.Visible = false;
-            // 
-            // btn_retornar4
-            // 
-            this.btn_retornar4.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
-            this.btn_retornar4.Location = new System.Drawing.Point(269, 56);
-            this.btn_retornar4.Name = "btn_retornar4";
-            this.btn_retornar4.Size = new System.Drawing.Size(34, 30);
-            this.btn_retornar4.TabIndex = 11;
-            this.btn_retornar4.UseVisualStyleBackColor = true;
-            this.btn_retornar4.Click += new System.EventHandler(this.btn_retornar4_Click);
-            // 
-            // dgv_4
-            // 
-            this.dgv_4.AllowUserToAddRows = false;
-            this.dgv_4.AllowUserToDeleteRows = false;
-            this.dgv_4.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
-            this.dgv_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgv_4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgv_4.ColumnHeadersHeight = 35;
-            this.dgv_4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_4.Location = new System.Drawing.Point(16, 130);
-            this.dgv_4.Name = "dgv_4";
-            this.dgv_4.ReadOnly = true;
-            this.dgv_4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgv_4.Size = new System.Drawing.Size(341, 139);
-            this.dgv_4.TabIndex = 10;
-            this.dgv_4.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_4_CellDoubleClick);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 22);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(153, 13);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "Listado de Areas de Despacho";
-            // 
-            // txtBuscar4
-            // 
-            this.txtBuscar4.Location = new System.Drawing.Point(77, 62);
-            this.txtBuscar4.Name = "txtBuscar4";
-            this.txtBuscar4.Size = new System.Drawing.Size(146, 20);
-            this.txtBuscar4.TabIndex = 1;
-            // 
-            // btn_buscar4
-            // 
-            this.btn_buscar4.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
-            this.btn_buscar4.ImageList = this.imageList2;
-            this.btn_buscar4.Location = new System.Drawing.Point(229, 56);
-            this.btn_buscar4.Name = "btn_buscar4";
-            this.btn_buscar4.Size = new System.Drawing.Size(34, 30);
-            this.btn_buscar4.TabIndex = 8;
-            this.btn_buscar4.UseVisualStyleBackColor = true;
-            this.btn_buscar4.Click += new System.EventHandler(this.btn_buscar4_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 65);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(40, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Buscar";
-            // 
             // Frm_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -957,23 +957,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.pnl_listado2.ResumeLayout(false);
+            this.pnl_listado2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_2)).EndInit();
+            this.pnl_listado4.ResumeLayout(false);
+            this.pnl_listado4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).EndInit();
             this.pnl_listado1.ResumeLayout(false);
             this.pnl_listado1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).EndInit();
             this.pnl_listado3.ResumeLayout(false);
             this.pnl_listado3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_3)).EndInit();
-            this.pnl_listado2.ResumeLayout(false);
-            this.pnl_listado2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_puntos_ventas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pct_imagen)).EndInit();
             this.Pnl_Titulo_Form.ResumeLayout(false);
             this.Pnl_Titulo_Form.PerformLayout();
-            this.pnl_listado4.ResumeLayout(false);
-            this.pnl_listado4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).EndInit();
             this.ResumeLayout(false);
 
         }

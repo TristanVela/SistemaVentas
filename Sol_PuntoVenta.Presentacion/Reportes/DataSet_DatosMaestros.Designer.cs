@@ -3384,7 +3384,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3566,7 +3566,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3748,7 +3748,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3930,7 +3930,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4114,7 +4114,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4298,7 +4298,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4481,7 +4481,7 @@ namespace Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapter
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Cn;
+            this._connection.ConnectionString = global::Sol_PuntoVenta.Presentacion.Properties.Settings.Default.Valor;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

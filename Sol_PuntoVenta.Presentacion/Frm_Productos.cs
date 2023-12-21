@@ -190,12 +190,20 @@ namespace Sol_PuntoVenta.Presentacion
             btn_um.Visible = Lestado;
             Btn_sf.Visible = Lestado;
             Btn_ad.Visible = Lestado;
+            btn_agregar_img.Visible = Lestado;
         }
 
         private void Mostrar_img(int nCodigo_pr)
         {
             Byte[] bImagen = new Byte[0];
             bImagen = N_Productos.Mostrar_img(nCodigo_pr);
+            MemoryStream ms = new MemoryStream(bImagen);
+            Pct_imagen.Image=System.Drawing.Image.FromStream(ms);
+        }      
+        private void Mostrar_img_prod_pred()
+        {
+            Byte[] bImagen = new Byte[0];
+            bImagen = N_Productos.Mostrar_img_prod_pred();
             MemoryStream ms = new MemoryStream(bImagen);
             Pct_imagen.Image=System.Drawing.Image.FromStream(ms);
         }
@@ -212,10 +220,10 @@ namespace Sol_PuntoVenta.Presentacion
             dgv_puntos_ventas.Columns[0].Width = 220;
             dgv_puntos_ventas.Columns[0].HeaderText = "PUNTO DE VENTA";
             dgv_puntos_ventas.Columns[0].ReadOnly = true;
-            dgv_puntos_ventas.Columns[1].Width = 40;
+            dgv_puntos_ventas.Columns[1].Width = 45;
             dgv_puntos_ventas.Columns[1].HeaderText = "Ok";
             dgv_puntos_ventas.Columns[1].ReadOnly = true;
-            dgv_puntos_ventas.Columns[1].Visible = false;
+            dgv_puntos_ventas.Columns[2].Visible = false;
         }
 
         private void Agregar_pv(string Descripcion_pv, bool OK, int nCodigo_pv) 
@@ -224,6 +232,7 @@ namespace Sol_PuntoVenta.Presentacion
             Fila["Descripcion_pv"] = Descripcion_pv;
             Fila["OK"] = OK;
             Fila["Codigo_pv"] = nCodigo_pv;
+            this.DTdetalle.Rows.Add(Fila);
         }
 
         private void Puntos_Ventas_Ok(int nOpcion, int nCodigo_pr)
@@ -370,6 +379,8 @@ namespace Sol_PuntoVenta.Presentacion
             this.Estado_BotonesProcesos(true);
             this.LimpiarTexto();
             this.Estado_Texto(false);
+            this.Puntos_Ventas_Ok(this.Estadoguarda,this.nCodigo);
+            this.Mostrar_img_prod_pred();
             Tbc_principal.SelectedIndex = 1;
             txt_descripcion_pr.Focus();
         }
@@ -389,8 +400,12 @@ namespace Sol_PuntoVenta.Presentacion
         {
             try
             {
-                if (txt_descripcion_sf.Text == String.Empty|| 
-                    txt_descripcion_um.Text == string.Empty)
+                if (txt_descripcion_pr.Text == String.Empty|| 
+                    txt_descripcion_ma.Text == String.Empty|| 
+                    txt_descripcion_um.Text == String.Empty|| 
+                    txt_descripcion_sf.Text == String.Empty|| 
+                    txt_descripcion_ad.Text == String.Empty|| 
+                    txt_precio_unitario.Text == string.Empty)
                 {
                     MessageBox.Show("Falta ingresar datos requeridos (*)",
                         "Aviso del sistema",
@@ -399,11 +414,19 @@ namespace Sol_PuntoVenta.Presentacion
                 }
                 else {
                     string rpta = "";
-                    E_SubFamilias oPropiedad = new E_SubFamilias();
-                    oPropiedad.Codigo_sf = this.nCodigo;
-                    oPropiedad.Descripcion_sf = txt_descripcion_sf.Text.Trim();
-                    oPropiedad.Codigo_fa = this.nCodigo_ma;
-                    rpta = N_SubFamilias.Guardar_sf(this.Estadoguarda, oPropiedad);
+                    E_Productos oPropiedad = new E_Productos();
+                    oPropiedad.Codigo_pr = this.nCodigo;
+                    oPropiedad.Descripcion_pr = txt_descripcion_pr.Text.Trim();
+                    oPropiedad.Codigo_ma = this.nCodigo_ma;
+                    oPropiedad.Codigo_um = this.nCodigo_um;
+                    oPropiedad.Codigo_sf = this.nCodigo_sf;
+                    oPropiedad.Codigo_ad = this.nCodigo_ad;
+                    oPropiedad.Precio_unitario = Convert.ToDecimal(txt_precio_unitario.Text);
+                    oPropiedad.Observacion = this.txt_observacion.Text.Trim();
+                    MemoryStream ms = new MemoryStream();
+                    Pct_imagen.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    oPropiedad.imagen = ms.GetBuffer();
+                    rpta = N_Productos.Guardar_pr(this.Estadoguarda, oPropiedad, DTdetalle);
                    if (rpta.Equals("OK"))
                     {
                         MessageBox.Show("Los datos han sido guardados correctamente",
@@ -418,6 +441,10 @@ namespace Sol_PuntoVenta.Presentacion
                         this.Estadoguarda = 0;
                         this.nCodigo = 0;
                         this.nCodigo_ma = 0;
+                        this.nCodigo_um = 0;
+                        this.nCodigo_sf = 0;
+                        this.nCodigo_sf = 0;
+                        this.nCodigo_ad = 0;
                         this.Listado_pr("%");
                         Tbc_principal.SelectedIndex = 0;
                     }
@@ -447,7 +474,7 @@ namespace Sol_PuntoVenta.Presentacion
                 this.LimpiarTexto();
                 this.Selecciona_Item();
                 Tbc_principal.SelectedIndex = 1;
-                Btn_ma.Focus();
+                txt_descripcion_pr.Focus();
             }
         }
 
@@ -475,7 +502,7 @@ namespace Sol_PuntoVenta.Presentacion
                 {
                     string rpta = "";
                     this.Selecciona_Item();
-                    rpta = N_SubFamilias.Eliminar_sf(this.nCodigo);
+                    rpta = N_Productos.Eliminar_pr(this.nCodigo);
                     if (rpta.Equals("OK"))
                     {
                         this.Listado_pr("%");
@@ -607,6 +634,16 @@ namespace Sol_PuntoVenta.Presentacion
             pnl_listado4.Location = btn_um.Location;
             pnl_listado4.Visible = true;
             txtBuscar4.Focus();
+        }
+
+        private void btn_agregar_img_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Foto = new OpenFileDialog();
+            Foto.Filter = "Image files(*.jpg,*.jpe,*.jfif,*.png) | *.jpg;*.jpe;*.jfif;*.png";
+            if (Foto.ShowDialog() == DialogResult.OK)
+            {
+                Pct_imagen.Image = Image.FromFile(Foto.FileName);
+            }
         }
     }
 }
