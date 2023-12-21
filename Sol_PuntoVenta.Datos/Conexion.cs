@@ -16,7 +16,7 @@ namespace Sol_PuntoVenta.Datos
         private Conexion()
         {
             this.Base = "BD_PUNTOVENTA";
-            this.Servidor = "DESKTOP-TPQIDD2\\MSSQLSERVER01";
+            this.Servidor = "DESKTOP-5TFVT23";
         }
 
         public SqlConnection CrearConexion()

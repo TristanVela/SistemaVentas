@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Productos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lbl_totalregistros = new System.Windows.Forms.Label();
@@ -192,9 +192,9 @@
             this.Dgv_Listado.AllowUserToAddRows = false;
             this.Dgv_Listado.AllowUserToDeleteRows = false;
             this.Dgv_Listado.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Dgv_Listado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Dgv_Listado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.Dgv_Listado.ColumnHeadersHeight = 35;
@@ -253,7 +253,7 @@
             this.pnl_listado2.Controls.Add(this.txtBuscar2);
             this.pnl_listado2.Controls.Add(this.btn_buscar2);
             this.pnl_listado2.Controls.Add(this.label13);
-            this.pnl_listado2.Location = new System.Drawing.Point(57, 254);
+            this.pnl_listado2.Location = new System.Drawing.Point(57, 271);
             this.pnl_listado2.Name = "pnl_listado2";
             this.pnl_listado2.Size = new System.Drawing.Size(369, 276);
             this.pnl_listado2.TabIndex = 12;
@@ -274,9 +274,9 @@
             this.dgv_2.AllowUserToAddRows = false;
             this.dgv_2.AllowUserToDeleteRows = false;
             this.dgv_2.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.dgv_2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgv_2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_2.ColumnHeadersHeight = 35;
@@ -360,9 +360,9 @@
             this.dgv_4.AllowUserToAddRows = false;
             this.dgv_4.AllowUserToDeleteRows = false;
             this.dgv_4.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_4.ColumnHeadersHeight = 35;
@@ -496,9 +496,9 @@
             this.dgv_1.AllowUserToAddRows = false;
             this.dgv_1.AllowUserToDeleteRows = false;
             this.dgv_1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            this.dgv_1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgv_1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_1.ColumnHeadersHeight = 35;
@@ -612,9 +612,9 @@
             this.dgv_3.AllowUserToAddRows = false;
             this.dgv_3.AllowUserToDeleteRows = false;
             this.dgv_3.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            this.dgv_3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.dgv_3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_3.ColumnHeadersHeight = 35;
@@ -632,9 +632,9 @@
             this.dgv_puntos_ventas.AllowUserToAddRows = false;
             this.dgv_puntos_ventas.AllowUserToDeleteRows = false;
             this.dgv_puntos_ventas.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            this.dgv_puntos_ventas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dgv_puntos_ventas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_puntos_ventas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_puntos_ventas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_puntos_ventas.ColumnHeadersHeight = 35;

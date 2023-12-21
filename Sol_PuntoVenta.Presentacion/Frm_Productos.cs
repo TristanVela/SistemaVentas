@@ -205,7 +205,7 @@ namespace Sol_PuntoVenta.Presentacion
             Byte[] bImagen = new Byte[0];
             bImagen = N_Productos.Mostrar_img_prod_pred();
             MemoryStream ms = new MemoryStream(bImagen);
-            Pct_imagen.Image=System.Drawing.Image.FromStream(ms);
+            Pct_imagen.Image=System.Drawing.Bitmap.FromStream(ms);
         }
 
         private void Crear_Tabla_pv()
@@ -378,7 +378,7 @@ namespace Sol_PuntoVenta.Presentacion
             this.Estado_BotonesPrincipales(false);
             this.Estado_BotonesProcesos(true);
             this.LimpiarTexto();
-            this.Estado_Texto(false);
+            this.Estado_Texto(true);
             this.Puntos_Ventas_Ok(this.Estadoguarda,this.nCodigo);
             this.Mostrar_img_prod_pred();
             Tbc_principal.SelectedIndex = 1;
@@ -465,7 +465,7 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Btn_actualizar_Click(object sender, EventArgs e)
         {
-            if (Dgv_Listado.Rows.Count > 0) 
+            if (Dgv_Listado.Rows.Count>0) 
             {
                 this.Estadoguarda = 2;
                 this.Estado_BotonesPrincipales(false);
@@ -533,9 +533,9 @@ namespace Sol_PuntoVenta.Presentacion
         {
             if (Dgv_Listado.Rows.Count>0)
             {
-            // Reportes.Frm_Rpt_SubFamilias oRpt_sf = new Reportes.Frm_Rpt_SubFamilias();
-            // oRpt_sf.txt_p1.Text = txtBuscar.Text.Trim();
-            // oRpt_sf.ShowDialog(); 
+                Reportes.Frm_Rpt_Productos oRpt_pr = new Reportes.Frm_Rpt_Productos();
+                oRpt_pr.txt_p1.Text = txtBuscar.Text.Trim();
+                oRpt_pr.ShowDialog(); 
             }
         }
 

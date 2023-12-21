@@ -30,27 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dataSet_DatosMaestros = new Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestros();
             this.uSPListadosfBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.uSP_Listado_sfTableAdapter = new Sol_PuntoVenta.Presentacion.Reportes.DataSet_DatosMaestrosTableAdapters.USP_Listado_sfTableAdapter();
             this.txt_p1 = new System.Windows.Forms.TextBox();
+            this.uSPListadosfBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_DatosMaestros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSPListadosfBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSPListadosfBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.uSPListadosfBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Sol_PuntoVenta.Presentacion.Reportes.Rpt_SubFamilias.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
-            this.reportViewer1.TabIndex = 0;
             // 
             // dataSet_DatosMaestros
             // 
@@ -61,6 +50,19 @@
             // 
             this.uSPListadosfBindingSource.DataMember = "USP_Listado_sf";
             this.uSPListadosfBindingSource.DataSource = this.dataSet_DatosMaestros;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.uSPListadosfBindingSource1;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Sol_PuntoVenta.Presentacion.Reportes.Rpt_SubFamilias.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.TabIndex = 0;
             // 
             // uSP_Listado_sfTableAdapter
             // 
@@ -74,6 +76,11 @@
             this.txt_p1.TabIndex = 3;
             this.txt_p1.Visible = false;
             // 
+            // uSPListadosfBindingSource1
+            // 
+            this.uSPListadosfBindingSource1.DataMember = "USP_Listado_sf";
+            this.uSPListadosfBindingSource1.DataSource = this.dataSet_DatosMaestros;
+            // 
             // Frm_Rpt_SubFamilias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -86,6 +93,7 @@
             this.Load += new System.EventHandler(this.Frm_Rpt_SubFamilias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_DatosMaestros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSPListadosfBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSPListadosfBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,5 +106,6 @@
         private DataSet_DatosMaestros dataSet_DatosMaestros;
         private DataSet_DatosMaestrosTableAdapters.USP_Listado_sfTableAdapter uSP_Listado_sfTableAdapter;
         internal System.Windows.Forms.TextBox txt_p1;
+        private System.Windows.Forms.BindingSource uSPListadosfBindingSource1;
     }
 }

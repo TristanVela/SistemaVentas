@@ -54,8 +54,8 @@ namespace Sol_PuntoVenta.Datos
                 comando.Parameters.Add("@nCodigo_sf", SqlDbType.VarChar).Value = oPropiedad.Codigo_sf;
                 comando.Parameters.Add("@nPrecio_unitario", SqlDbType.Int).Value = oPropiedad.Precio_unitario;
                 comando.Parameters.Add("@nCodigo_ad", SqlDbType.VarChar).Value = oPropiedad.Codigo_ad;
-                comando.Parameters.Add("@nObservacion", SqlDbType.Int).Value = oPropiedad.Observacion;
-                comando.Parameters.Add("@oImagen", SqlDbType.Int).Value = oPropiedad.imagen;
+                comando.Parameters.Add("@cObservacion", SqlDbType.VarChar).Value = oPropiedad.Observacion;
+                comando.Parameters.Add("@oImagen", SqlDbType.Image).Value = oPropiedad.imagen;
                 comando.Parameters.Add("@Ty_01", SqlDbType.Structured).Value = DT;
                 SqlCon.Open();
                 Rpta = comando.ExecuteNonQuery() >= 1 ? "OK" : "No se pudo ingresar el registro";
@@ -239,7 +239,7 @@ namespace Sol_PuntoVenta.Datos
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 SqlCommand comando = new SqlCommand("USP_Mostrar_img", SqlCon);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
+                comando.Parameters.Add("@nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
                 SqlCon.Open();
                 resultado = comando.ExecuteReader();
                 Tabla.Load(resultado);
@@ -280,7 +280,7 @@ namespace Sol_PuntoVenta.Datos
             finally
             {
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
-            }
+          }
         }
     }
 }
