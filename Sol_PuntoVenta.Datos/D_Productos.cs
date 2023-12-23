@@ -51,9 +51,9 @@ namespace Sol_PuntoVenta.Datos
                 comando.Parameters.Add("@cDescripcion_pr", SqlDbType.VarChar).Value = oPropiedad.Descripcion_pr;
                 comando.Parameters.Add("@nCodigo_ma", SqlDbType.Int).Value = oPropiedad.Codigo_ma;
                 comando.Parameters.Add("@nCodigo_um", SqlDbType.Int).Value = oPropiedad.Codigo_um;
-                comando.Parameters.Add("@nCodigo_sf", SqlDbType.VarChar).Value = oPropiedad.Codigo_sf;
-                comando.Parameters.Add("@nPrecio_unitario", SqlDbType.Int).Value = oPropiedad.Precio_unitario;
-                comando.Parameters.Add("@nCodigo_ad", SqlDbType.VarChar).Value = oPropiedad.Codigo_ad;
+                comando.Parameters.Add("@nCodigo_sf", SqlDbType.Int).Value = oPropiedad.Codigo_sf;
+                comando.Parameters.Add("@nPrecio_unitario", SqlDbType.Decimal).Value = oPropiedad.Precio_unitario;
+                comando.Parameters.Add("@nCodigo_ad", SqlDbType.Int).Value = oPropiedad.Codigo_ad;
                 comando.Parameters.Add("@cObservacion", SqlDbType.VarChar).Value = oPropiedad.Observacion;
                 comando.Parameters.Add("@oImagen", SqlDbType.Image).Value = oPropiedad.imagen;
                 comando.Parameters.Add("@Ty_01", SqlDbType.Structured).Value = DT;
@@ -228,11 +228,10 @@ namespace Sol_PuntoVenta.Datos
             }
         }
 
-        public byte[] Mostrar_img(int nCodigo_pr )
+        public byte[] Mostrar_img(int nCodigo_pr)
         {
-            Byte[] bImagen = new  byte[0];
+            Byte[] bImagen = new byte[0];
             SqlDataReader resultado;
-            DataTable Tabla = new DataTable();
             SqlConnection SqlCon = new SqlConnection();
             try
             {
@@ -242,8 +241,15 @@ namespace Sol_PuntoVenta.Datos
                 comando.Parameters.Add("@nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
                 SqlCon.Open();
                 resultado = comando.ExecuteReader();
-                Tabla.Load(resultado);
-                bImagen = (byte[])Tabla.Rows[0][0];
+
+                if (resultado.HasRows)
+                {
+                    while (resultado.Read())
+                    {
+                        bImagen = (byte[])resultado["imagen"];
+                    }
+                }
+
                 return bImagen;
             }
             catch (Exception ex)
@@ -255,6 +261,7 @@ namespace Sol_PuntoVenta.Datos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
+
 
         public byte[] Mostrar_img_prod_pred()
         {

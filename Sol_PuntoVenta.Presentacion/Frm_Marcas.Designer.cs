@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Marcas));
             this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -127,9 +127,9 @@
             this.Dgv_Listado.AllowUserToAddRows = false;
             this.Dgv_Listado.AllowUserToDeleteRows = false;
             this.Dgv_Listado.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Dgv_Listado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Dgv_Listado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.Dgv_Listado.ColumnHeadersHeight = 35;

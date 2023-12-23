@@ -167,3 +167,5 @@ D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Rep
 D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Unidad_Medida.resources
 C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Productos.resources
 D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Productos.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_DashBoard.resources
