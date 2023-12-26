@@ -63,9 +63,29 @@ namespace Sol_PuntoVenta.Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4213475_arrow_back_left_return_115409 {
+            get {
+                object obj = ResourceManager.GetObject("4213475-arrow-back-left-return_115409", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reports {
             get {
                 object obj = ResourceManager.GetObject("reports", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap searchmagnifierinterfacesymbol1_79893 {
+            get {
+                object obj = ResourceManager.GetObject("searchmagnifierinterfacesymbol1_79893", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -161,6 +161,7 @@ namespace Sol_PuntoVenta.Presentacion
             txt_descripcion_ma.Text = "";
             txt_descripcion_um.Text = "";
             txt_descripcion_sf.Text = "";
+            txt_precio_unitario.Text = "0.00";
             txt_descripcion_ad.Text = "";
             txt_observacion.Text = "";
         }

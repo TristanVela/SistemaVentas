@@ -69,7 +69,7 @@
             this.Pnl_Procesos = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.PR_Registrar_Pedido = new FontAwesome.Sharp.IconButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Pnl_Titulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Icono_Seleccionado)).BeginInit();
@@ -390,7 +390,7 @@
             // 
             // Pnl_DatosMaestros
             // 
-            this.Pnl_DatosMaestros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Pnl_DatosMaestros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.Pnl_DatosMaestros.Controls.Add(this.DM_AreaDespacho);
             this.Pnl_DatosMaestros.Controls.Add(this.DM_Mesas);
             this.Pnl_DatosMaestros.Controls.Add(this.DM_PuntoVenta);
@@ -408,11 +408,12 @@
             // 
             // DM_AreaDespacho
             // 
+            this.DM_AreaDespacho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_AreaDespacho.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_AreaDespacho.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_AreaDespacho.FlatAppearance.BorderSize = 0;
             this.DM_AreaDespacho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_AreaDespacho.ForeColor = System.Drawing.Color.White;
+            this.DM_AreaDespacho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_AreaDespacho.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_AreaDespacho.IconColor = System.Drawing.Color.White;
             this.DM_AreaDespacho.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -425,16 +426,17 @@
             this.DM_AreaDespacho.TabIndex = 11;
             this.DM_AreaDespacho.Text = "Areas de Despacho";
             this.DM_AreaDespacho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_AreaDespacho.UseVisualStyleBackColor = true;
+            this.DM_AreaDespacho.UseVisualStyleBackColor = false;
             this.DM_AreaDespacho.Click += new System.EventHandler(this.DM_AreaDespacho_Click);
             // 
             // DM_Mesas
             // 
+            this.DM_Mesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_Mesas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_Mesas.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_Mesas.FlatAppearance.BorderSize = 0;
             this.DM_Mesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_Mesas.ForeColor = System.Drawing.Color.White;
+            this.DM_Mesas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_Mesas.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_Mesas.IconColor = System.Drawing.Color.White;
             this.DM_Mesas.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -447,16 +449,17 @@
             this.DM_Mesas.TabIndex = 10;
             this.DM_Mesas.Text = "Mesas";
             this.DM_Mesas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_Mesas.UseVisualStyleBackColor = true;
+            this.DM_Mesas.UseVisualStyleBackColor = false;
             this.DM_Mesas.Click += new System.EventHandler(this.DM_Mesas_Click);
             // 
             // DM_PuntoVenta
             // 
+            this.DM_PuntoVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_PuntoVenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_PuntoVenta.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_PuntoVenta.FlatAppearance.BorderSize = 0;
             this.DM_PuntoVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_PuntoVenta.ForeColor = System.Drawing.Color.White;
+            this.DM_PuntoVenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_PuntoVenta.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_PuntoVenta.IconColor = System.Drawing.Color.White;
             this.DM_PuntoVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -469,16 +472,17 @@
             this.DM_PuntoVenta.TabIndex = 9;
             this.DM_PuntoVenta.Text = "Punto de Venta";
             this.DM_PuntoVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_PuntoVenta.UseVisualStyleBackColor = true;
+            this.DM_PuntoVenta.UseVisualStyleBackColor = false;
             this.DM_PuntoVenta.Click += new System.EventHandler(this.DM_PuntoVenta_Click);
             // 
             // DM_Familias
             // 
+            this.DM_Familias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_Familias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_Familias.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_Familias.FlatAppearance.BorderSize = 0;
             this.DM_Familias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_Familias.ForeColor = System.Drawing.Color.White;
+            this.DM_Familias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_Familias.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_Familias.IconColor = System.Drawing.Color.White;
             this.DM_Familias.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -491,16 +495,17 @@
             this.DM_Familias.TabIndex = 8;
             this.DM_Familias.Text = "Familias";
             this.DM_Familias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_Familias.UseVisualStyleBackColor = true;
+            this.DM_Familias.UseVisualStyleBackColor = false;
             this.DM_Familias.Click += new System.EventHandler(this.DM_Familias_Click);
             // 
             // DM_SubFamilias
             // 
+            this.DM_SubFamilias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_SubFamilias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_SubFamilias.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_SubFamilias.FlatAppearance.BorderSize = 0;
             this.DM_SubFamilias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_SubFamilias.ForeColor = System.Drawing.Color.White;
+            this.DM_SubFamilias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_SubFamilias.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_SubFamilias.IconColor = System.Drawing.Color.White;
             this.DM_SubFamilias.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -513,16 +518,17 @@
             this.DM_SubFamilias.TabIndex = 7;
             this.DM_SubFamilias.Text = "SubFamilias";
             this.DM_SubFamilias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_SubFamilias.UseVisualStyleBackColor = true;
+            this.DM_SubFamilias.UseVisualStyleBackColor = false;
             this.DM_SubFamilias.Click += new System.EventHandler(this.DM_SubFamilias_Click);
             // 
             // DM_Medidas
             // 
+            this.DM_Medidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_Medidas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_Medidas.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_Medidas.FlatAppearance.BorderSize = 0;
             this.DM_Medidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_Medidas.ForeColor = System.Drawing.Color.White;
+            this.DM_Medidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_Medidas.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_Medidas.IconColor = System.Drawing.Color.White;
             this.DM_Medidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -535,16 +541,17 @@
             this.DM_Medidas.TabIndex = 6;
             this.DM_Medidas.Text = "Unidades de Medida";
             this.DM_Medidas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_Medidas.UseVisualStyleBackColor = true;
+            this.DM_Medidas.UseVisualStyleBackColor = false;
             this.DM_Medidas.Click += new System.EventHandler(this.DM_Medidas_Click);
             // 
             // DM_Marcas
             // 
+            this.DM_Marcas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_Marcas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_Marcas.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_Marcas.FlatAppearance.BorderSize = 0;
             this.DM_Marcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_Marcas.ForeColor = System.Drawing.Color.White;
+            this.DM_Marcas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_Marcas.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_Marcas.IconColor = System.Drawing.Color.White;
             this.DM_Marcas.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -557,16 +564,17 @@
             this.DM_Marcas.TabIndex = 5;
             this.DM_Marcas.Text = "Marcas";
             this.DM_Marcas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_Marcas.UseVisualStyleBackColor = true;
+            this.DM_Marcas.UseVisualStyleBackColor = false;
             this.DM_Marcas.Click += new System.EventHandler(this.DM_Marcas_Click);
             // 
             // DM_productos
             // 
+            this.DM_productos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.DM_productos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DM_productos.Dock = System.Windows.Forms.DockStyle.Top;
             this.DM_productos.FlatAppearance.BorderSize = 0;
             this.DM_productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DM_productos.ForeColor = System.Drawing.Color.White;
+            this.DM_productos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DM_productos.IconChar = FontAwesome.Sharp.IconChar.List;
             this.DM_productos.IconColor = System.Drawing.Color.White;
             this.DM_productos.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -579,7 +587,7 @@
             this.DM_productos.TabIndex = 4;
             this.DM_productos.Text = "Productos";
             this.DM_productos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DM_productos.UseVisualStyleBackColor = true;
+            this.DM_productos.UseVisualStyleBackColor = false;
             this.DM_productos.Click += new System.EventHandler(this.DM_productos_Click);
             // 
             // Btn_DatosMaestros
@@ -605,7 +613,7 @@
             // 
             // Pnl_Reportes
             // 
-            this.Pnl_Reportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Pnl_Reportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.Pnl_Reportes.Controls.Add(this.iconButton5);
             this.Pnl_Reportes.Controls.Add(this.iconButton6);
             this.Pnl_Reportes.Controls.Add(this.iconButton8);
@@ -618,11 +626,12 @@
             // 
             // iconButton5
             // 
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.iconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
+            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.List;
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -635,15 +644,16 @@
             this.iconButton5.TabIndex = 6;
             this.iconButton5.Text = "Procesos";
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.UseVisualStyleBackColor = false;
             // 
             // iconButton6
             // 
+            this.iconButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.iconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton6.FlatAppearance.BorderSize = 0;
             this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.ForeColor = System.Drawing.Color.White;
+            this.iconButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.List;
             this.iconButton6.IconColor = System.Drawing.Color.White;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -656,15 +666,16 @@
             this.iconButton6.TabIndex = 5;
             this.iconButton6.Text = "Procesos";
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = true;
+            this.iconButton6.UseVisualStyleBackColor = false;
             // 
             // iconButton8
             // 
+            this.iconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.iconButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton8.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton8.FlatAppearance.BorderSize = 0;
             this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.ForeColor = System.Drawing.Color.White;
+            this.iconButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.List;
             this.iconButton8.IconColor = System.Drawing.Color.White;
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -677,7 +688,7 @@
             this.iconButton8.TabIndex = 4;
             this.iconButton8.Text = "Procesos";
             this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = true;
+            this.iconButton8.UseVisualStyleBackColor = false;
             // 
             // Btn_Reportes
             // 
@@ -702,10 +713,10 @@
             // 
             // Pnl_Procesos
             // 
-            this.Pnl_Procesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Pnl_Procesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.Pnl_Procesos.Controls.Add(this.iconButton2);
             this.Pnl_Procesos.Controls.Add(this.iconButton1);
-            this.Pnl_Procesos.Controls.Add(this.iconButton3);
+            this.Pnl_Procesos.Controls.Add(this.PR_Registrar_Pedido);
             this.Pnl_Procesos.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_Procesos.Location = new System.Drawing.Point(0, 230);
             this.Pnl_Procesos.Name = "Pnl_Procesos";
@@ -715,11 +726,12 @@
             // 
             // iconButton2
             // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Wrench;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -732,15 +744,16 @@
             this.iconButton2.TabIndex = 6;
             this.iconButton2.Text = "Procesos";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.UseVisualStyleBackColor = false;
             // 
             // iconButton1
             // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
             this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Wrench;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -753,28 +766,30 @@
             this.iconButton1.TabIndex = 5;
             this.iconButton1.Text = "Procesos";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // PR_Registrar_Pedido
             // 
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 0);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(213, 40);
-            this.iconButton3.TabIndex = 4;
-            this.iconButton3.Text = "Procesos";
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.PR_Registrar_Pedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(169)))));
+            this.PR_Registrar_Pedido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PR_Registrar_Pedido.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PR_Registrar_Pedido.FlatAppearance.BorderSize = 0;
+            this.PR_Registrar_Pedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PR_Registrar_Pedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PR_Registrar_Pedido.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.PR_Registrar_Pedido.IconColor = System.Drawing.Color.White;
+            this.PR_Registrar_Pedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PR_Registrar_Pedido.IconSize = 32;
+            this.PR_Registrar_Pedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PR_Registrar_Pedido.Location = new System.Drawing.Point(0, 0);
+            this.PR_Registrar_Pedido.Name = "PR_Registrar_Pedido";
+            this.PR_Registrar_Pedido.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.PR_Registrar_Pedido.Size = new System.Drawing.Size(213, 40);
+            this.PR_Registrar_Pedido.TabIndex = 4;
+            this.PR_Registrar_Pedido.Text = "Registrar Pedido";
+            this.PR_Registrar_Pedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.PR_Registrar_Pedido.UseVisualStyleBackColor = false;
+            this.PR_Registrar_Pedido.Click += new System.EventHandler(this.PR_Registrar_Pedido_Click);
             // 
             // timer1
             // 
@@ -821,7 +836,7 @@
         private FontAwesome.Sharp.IconButton Btn_Procesos;
         private System.Windows.Forms.Panel Pnl_menu;
         private System.Windows.Forms.Panel Pnl_Procesos;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton PR_Registrar_Pedido;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton Btn_DatosMaestros;

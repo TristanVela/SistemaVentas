@@ -169,3 +169,4 @@ C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.
 D:\Sistema\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Productos.resources
 C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\bin\Debug\FontAwesome.Sharp.dll
 C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_DashBoard.resources
+C:\Sistemas\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Procesos.Frm_Registro_Pedidos.resources

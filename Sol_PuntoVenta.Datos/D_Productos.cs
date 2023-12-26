@@ -232,6 +232,7 @@ namespace Sol_PuntoVenta.Datos
         {
             Byte[] bImagen = new byte[0];
             SqlDataReader resultado;
+            DataTable Tabla = new DataTable();
             SqlConnection SqlCon = new SqlConnection();
             try
             {
@@ -241,15 +242,8 @@ namespace Sol_PuntoVenta.Datos
                 comando.Parameters.Add("@nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
                 SqlCon.Open();
                 resultado = comando.ExecuteReader();
-
-                if (resultado.HasRows)
-                {
-                    while (resultado.Read())
-                    {
-                        bImagen = (byte[])resultado["imagen"];
-                    }
-                }
-
+                Tabla.Load(resultado);
+                bImagen = (byte[])Tabla.Rows[0][0];
                 return bImagen;
             }
             catch (Exception ex)
