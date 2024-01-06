@@ -195,21 +195,22 @@
             // 
             // pnl_listado1
             // 
-            this.pnl_listado1.Controls.Add(this.btn_retornar1);
             this.pnl_listado1.Controls.Add(this.dgv_1);
+            this.pnl_listado1.Controls.Add(this.btn_retornar1);
             this.pnl_listado1.Controls.Add(this.label6);
             this.pnl_listado1.Controls.Add(this.txtBuscar1);
             this.pnl_listado1.Controls.Add(this.btn_buscar1);
             this.pnl_listado1.Controls.Add(this.label5);
-            this.pnl_listado1.Location = new System.Drawing.Point(257, 192);
+            this.pnl_listado1.Location = new System.Drawing.Point(362, 229);
             this.pnl_listado1.Name = "pnl_listado1";
-            this.pnl_listado1.Size = new System.Drawing.Size(499, 291);
+            this.pnl_listado1.Size = new System.Drawing.Size(382, 261);
             this.pnl_listado1.TabIndex = 9;
             this.pnl_listado1.Visible = false;
             // 
             // btn_retornar1
             // 
-            this.btn_retornar1.ImageKey = "searchmagnifierinterfacesymbol1_79893.png";
+            this.btn_retornar1.ImageKey = "(ninguno)";
+            this.btn_retornar1.ImageList = this.imageList2;
             this.btn_retornar1.Location = new System.Drawing.Point(269, 56);
             this.btn_retornar1.Name = "btn_retornar1";
             this.btn_retornar1.Size = new System.Drawing.Size(34, 30);
@@ -229,7 +230,7 @@
             this.dgv_1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_1.ColumnHeadersHeight = 35;
             this.dgv_1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_1.Location = new System.Drawing.Point(16, 130);
+            this.dgv_1.Location = new System.Drawing.Point(16, 105);
             this.dgv_1.Name = "dgv_1";
             this.dgv_1.ReadOnly = true;
             this.dgv_1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;

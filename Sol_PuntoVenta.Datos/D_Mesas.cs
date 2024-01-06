@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Sol_PuntoVenta.Entidades;
+using Sol_PuntoVenta.Datos;
 using System.Data;
 
 namespace Sol_PuntoVenta.Datos
