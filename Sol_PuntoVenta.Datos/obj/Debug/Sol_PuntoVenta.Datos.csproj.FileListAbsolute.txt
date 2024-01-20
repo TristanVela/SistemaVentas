@@ -16,3 +16,12 @@ D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CoreCompil
 D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CopyComplete
 D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.dll
 D:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.pdb
+C:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Datos.dll
+C:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Datos.pdb
+C:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Entidades.dll
+C:\Sistema\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Entidades.pdb
+C:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.AssemblyReference.cache
+C:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CoreCompileInputs.cache
+C:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CopyComplete
+C:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.dll
+C:\Sistema\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.pdb

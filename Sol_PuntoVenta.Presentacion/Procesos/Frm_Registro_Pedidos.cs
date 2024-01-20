@@ -65,7 +65,18 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
             Tablax = N_Registro_Pedidos.Estado_Turno_pv(nCodigo_pv);
             if (Tablax.Rows.Count>0)
             {
-                
+                string cFecha_ct = Convert.ToString(Tablax.Rows[0][0]);
+                Txt_FechTrabajo.Text = cFecha_ct.Substring(0, cFecha_ct.Length - 8);
+                Txt_Turno.Text = Convert.ToString(Tablax.Rows[0][2]);
+                Txt_Estado.Text = Convert.ToString(Tablax.Rows[0][4]);
+                if (Txt_Estado.Text.Trim()== "Cerrado")
+                {
+                    Lbl_Mensaje.Visible = true;
+                }
+                else
+                {
+                    Lbl_Mensaje.Visible=false;  
+                }
             }
             else
             {
@@ -102,7 +113,7 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
         private void Frm_Registro_Pedidos_Load(object sender, EventArgs e)
         {
             this.Listado_pv("%");
-            Lbl_Mensaje.Text = "El turno del Punto de Venta se encuentra cerrado. Solicite al administrador la apertura de una nueva fecha de trabajo y/o turno.";
+            Lbl_Mensaje.Text = "*El turno del Punto de Venta se encuentra cerrado. Solicite al administrador la apertura de una nueva fecha de trabajo y/o turno.";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -111,6 +122,11 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
             {
                 this.Estado_FechaTurno_pv(this.nCodigo_pv);
             }
+        }
+
+        private void dgv_1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     }

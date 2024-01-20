@@ -20,3 +20,14 @@ D:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.CoreCo
 D:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.CopyComplete
 D:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.dll
 D:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.pdb
+C:\Sistema\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Negocio.dll
+C:\Sistema\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Negocio.pdb
+C:\Sistema\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Datos.dll
+C:\Sistema\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Entidades.dll
+C:\Sistema\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Datos.pdb
+C:\Sistema\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Entidades.pdb
+C:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.AssemblyReference.cache
+C:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.CoreCompileInputs.cache
+C:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.CopyComplete
+C:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.dll
+C:\Sistema\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.pdb

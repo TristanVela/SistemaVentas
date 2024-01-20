@@ -252,7 +252,7 @@
             // 
             this.pnl_listado1.Controls.Add(this.dgv_1);
             this.pnl_listado1.Controls.Add(this.btn_retornar1);
-            this.pnl_listado1.Location = new System.Drawing.Point(277, 6);
+            this.pnl_listado1.Location = new System.Drawing.Point(114, 6);
             this.pnl_listado1.Name = "pnl_listado1";
             this.pnl_listado1.Size = new System.Drawing.Size(385, 134);
             this.pnl_listado1.TabIndex = 10;
@@ -270,12 +270,13 @@
             this.dgv_1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_1.ColumnHeadersHeight = 35;
             this.dgv_1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_1.Location = new System.Drawing.Point(21, 7);
+            this.dgv_1.Location = new System.Drawing.Point(12, 10);
             this.dgv_1.Name = "dgv_1";
             this.dgv_1.ReadOnly = true;
             this.dgv_1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgv_1.Size = new System.Drawing.Size(309, 121);
             this.dgv_1.TabIndex = 10;
+            this.dgv_1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_1_CellContentClick);
             this.dgv_1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_1_CellDoubleClick);
             // 
             // btn_retornar1
